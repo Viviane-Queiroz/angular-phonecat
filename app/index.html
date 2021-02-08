@@ -26,9 +26,19 @@
   </head>
   <body>
 
+    <p>Nothing here {{'yet' + '!'}}</p>
+
+    <ul>
+      <li ng-repeat="phone in phones">
+        <span>{{phone.name}}</span>
+        <p>{{phone.snippet}}</p>
+        <!-- https://code.angularjs.org/snapshot-stable/docs/tutorial/step_02  -->
+      </li>
+    </ul>
     <div class="view-container">
       <div ng-view class="view-frame"></div>
     </div>
+
 
   </body>
 </html>
